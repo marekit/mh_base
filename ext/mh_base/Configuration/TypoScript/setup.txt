@@ -1,1 +1,9 @@
 <INCLUDE_TYPOSCRIPT: source="FILE:EXT:mh_base/Resources/Private/TypoScript/BaseSetup.ts">
+
+[applicationContext = Development]
+    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:mh_base/Resources/Private/TypoScript/DevelopmentSetup.ts">
+[end]
+
+[applicationContext = Production/Staging]
+    <INCLUDE_TYPOSCRIPT: source="FILE:EXT:mh_base/Resources/Private/TypoScript/StagingSetup.ts">
+[end]

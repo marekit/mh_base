@@ -1,0 +1,24 @@
+{
+  "name": "mh/mh_base",
+  "type": "typo3-cms-extension",
+  "description": "...",
+  "authors": [
+    {
+      "name": "Marc Hauschildt",
+      "role": "Developer",
+      "email": "marc.hauschildt@me.com"
+    }
+  ],
+  "version": "1.0.0",
+  "require": {
+    "typo3/cms-core": ">=7.6.0,<8.0"
+  },
+  "replace": {
+    "project": "self.version"
+  },
+  "autoload": {
+    "psr-4": {
+      "MH\\mh_base\\": "Classes"
+    }
+  }
+}

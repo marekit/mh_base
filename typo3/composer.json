@@ -7,10 +7,16 @@
   ],
   "require": {
     "typo3/cms": "~7.6.0",
-    "fluidtypo3/builder": "~1.1.1"
+    "dmitryd/typo3-realurl": "~2.0.0",
+    "fluidtypo3/fluidcontent": "~4.4.0",
+    "fluidtypo3/fluidpages": "~3.6.0",
+    "fluidtypo3/flux": "~7.4.0",
+    "fluidtypo3/vhs": "~2.4.0"
   },
   "require-dev": {},
   "scripts": {
+    "post-install-cmd": "MH\\mh_base\\Composer\\InstallScript::runPostInstallCommand",
+    "post-update-cmd": "MH\\mh_base\\Composer\\InstallScript::runPostUpdateCommand"
   },
   "config": {
     "vendor-dir": "/var/www/_share/vendor"
@@ -23,6 +29,8 @@
   },
   "autoload": {
     "psr-4": {
+      "MH\\mh_base\\Composer\\": "../ext/mh_base/Classes/Composer",
+      "MH\\mh_base\\": "typo3conf/ext/mh_base/Classes"
     }
   }
 }

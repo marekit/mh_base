@@ -1,0 +1,28 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://composer.typo3.org/"
+    }
+  ],
+  "require": {
+    "typo3/cms": "~7.6.0",
+    "fluidtypo3/builder": "~1.1.1"
+  },
+  "require-dev": {},
+  "scripts": {
+  },
+  "config": {
+    "vendor-dir": "/var/www/_share/vendor"
+  },
+  "extra": {
+    "typo3/cms": {
+      "cms-package-dir": "{$vendor-dir}/../typo3/typo3_src-7",
+      "web-dir": ""
+    }
+  },
+  "autoload": {
+    "psr-4": {
+    }
+  }
+}

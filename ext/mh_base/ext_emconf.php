@@ -31,6 +31,6 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'autoload' => [
-        'psr-4' => ['MH\\mh_base\\' => 'Classes'],
+        'psr-4' => ['MH\\Base\\' => 'Classes'],
     ],
 ];

@@ -3,11 +3,11 @@
      xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
      xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
 
-    <f:layout name="Content"/>
+    <f:layout name="Default"/>
 
     <f:section name="Configuration">
         <flux:form id="content.sample">
-            <flux:field.file name="image" allowed="jpg" uploadFolder="uploads/tx_mh_base/sample" minItems="1" maxItems="1" size="1" />
+            <flux:field.file name="image" allowed="jpg" uploadFolder="uploads/tx_mh_base" minItems="1" maxItems="1" size="1" />
             <flux:field.input name="headline" />
             <flux:field.text name="teasertext" rows="5" cols="30" required="TRUE" />
             <flux:field.input name="link">
@@ -31,11 +31,12 @@
     </f:section>
 
     <f:section name="Main">
+        s
         <div class="mh_base-sample">
             <article>
                 <h1>{headline}</h1>
                 <div class="image-wrapper">
-                    <v:media.image src="uploads/mh_base/{image}" alt="{headline}" width="200" />
+                    <v:media.image src="uploads/mh_base{image}" alt="{headline}" width="200" />
                 </div>
                 <div class="text-wrapper">
                     <f:format.nl2br>{teasertext}</f:format.nl2br>

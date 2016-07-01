@@ -4,7 +4,7 @@ namespace MH\Base\Controller;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2016 Marc Hauschildt <>
+ *  (c) 2016 Marc Hauschildt <marc.hauschildt@me.com>
  *
  *  All rights reserved
  *
@@ -34,5 +34,12 @@ use FluidTYPO3\Fluidcontent\Controller\ContentController as AbstractController;
  */
 class ContentController extends AbstractController
 {
+	public function sampleAction() {
+
+		echo "hallo";
+		$special = "Spezialwert 123";
+		$this->view->assign('mySpecialVariable', $special);
+		die("asd");
+	}
 
 }

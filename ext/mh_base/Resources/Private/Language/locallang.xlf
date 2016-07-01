@@ -20,7 +20,10 @@
 
             <!-- Page (Backend) -->
             <trans-unit id="flux.page.default">
-                <source>Default Pagelayout</source>
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="flux.page.default.description">
+                <source>Common page template</source>
             </trans-unit>
             <trans-unit id="flux.page.default.fields.settings.pageClass">
                 <source>Add some css class</source>

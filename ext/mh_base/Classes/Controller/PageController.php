@@ -4,7 +4,7 @@ namespace MH\Base\Controller;
 /***************************************************************
  *  Copyright notice
  *
- *  (c) 2016 Marc Hauschildt <>
+ *  (c) 2016 Marc Hauschildt <marc.hauschildt@me.com>
  *
  *  All rights reserved
  *

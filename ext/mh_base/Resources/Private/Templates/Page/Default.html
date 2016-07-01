@@ -1,18 +1,18 @@
 <div xmlns="http://www.w3.org/1999/xhtml" lang="en"
      xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
-     xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers"
-     xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers">
+     xmlns:flux="http://typo3.org/ns/FluidTYPO3\Flux/ViewHelpers"
+     xmlns:v="http://typo3.org/ns/FluidTYPO3\Vhs/ViewHelpers">
 
-    <f:layout name="Default" />
+    <f:layout name="DefaultPage" />
 
     <f:section name="Configuration">
 
         <flux:form id="page.default">
 
             <!-- Input field for Fluid variable 'pageClass' -->
-            <flux:field.input name="settings.pageClass" default="" />
+            <flux:field.input name="settings.pageClass" default="some-css-class" />
 
-            <!-- Edit this grid to change the "backend layout" structure -->
+            <!-- Backend layout grid (TYPO3 6.x and greater only) -->
             <flux:grid>
                 <flux:grid.row>
                     <flux:grid.column colPos="1" name="sidebar" style="width: 25%" />
@@ -24,7 +24,6 @@
 
     </f:section>
 
-    <!-- Edit this to change the frontend rendering -->
     <f:section name="Content">
         <!-- Render colPos=0 in this section -->
         <v:content.render column="0" />

@@ -1,6 +1,6 @@
 <?php
 
-namespace MH\mh_base\Composer;
+namespace MH\Base\Composer;
 
 use Composer\Script\Event as Event;
 use TYPO3\CMS\Composer\Plugin\Config;

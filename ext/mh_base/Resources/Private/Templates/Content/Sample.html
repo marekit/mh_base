@@ -1,0 +1,50 @@
+<div xmlns="http://www.w3.org/1999/xhtml" lang="en"
+     xmlns:f="http://typo3.org/ns/TYPO3/Fluid/ViewHelpers"
+     xmlns:flux="http://typo3.org/ns/FluidTYPO3/Flux/ViewHelpers"
+     xmlns:v="http://typo3.org/ns/FluidTYPO3/Vhs/ViewHelpers">
+
+    <f:layout name="Content"/>
+
+    <f:section name="Configuration">
+        <flux:form id="content.sample">
+            <flux:field.file name="image" allowed="jpg" uploadFolder="uploads/tx_mh_base" minItems="1" maxItems="1" size="1" />
+            <flux:field.input name="headline" />
+            <flux:field.text name="teasertext" rows="5" cols="30" required="TRUE" />
+            <flux:field.input name="link">
+                <flux:wizard.link activeTab="page"/>
+            </flux:field.input>
+        </flux:form>
+    </f:section>
+
+    <f:section name="Preview">
+        <table width="100%">
+            <tr>
+                <td width="50%"><v:media.image src="uploads/tx_mh_base/{image}" alt="{headline}" width="100" /></td>
+                <td width="50%">
+                    <f:format.crop maxCharacters="50">{teasertext}</f:format.crop>
+                    <f:if condition="{link}">
+                        <strong>Link:</strong> {link}
+                    </f:if>
+                </td>
+            </tr>
+        </table>
+    </f:section>
+
+    <f:section name="Main">
+        <div class="mh_base-sample">
+            <article>
+                <h1>{headline}</h1>
+                <div class="image-wrapper">
+                    <v:media.image src="uploads/tx_mh_base/{image}" alt="{headline}" width="200" />
+                </div>
+                <div class="text-wrapper">
+                    <f:format.nl2br>{teasertext}</f:format.nl2br>
+                    <f:if condition="{link}">
+                        <f:link.page pageUid="{link}" title="{headline}" class="readmore">read more</f:link.page>
+                    </f:if>
+                </div>
+            </article>
+        </div>
+    </f:section>
+
+</div>

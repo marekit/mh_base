@@ -1,5 +1,5 @@
 {
-  "name": "mh/mh_base",
+  "name": "mh/base",
   "type": "typo3-cms-extension",
   "description": "...",
   "authors": [
@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "MH\\mh_base\\": "Classes"
+      "MH\\Base\\": "Classes"
     }
   }
 }

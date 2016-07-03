@@ -7,7 +7,7 @@ $EM_CONF[$_EXTKEY] = [
     'version' => '1.0.0',
     'state' => 'stable',
     'author' => 'Marc Hauschildt',
-    'author_email' => 'marc.hauschildt@medienwerft.de',
+    'author_email' => 'marc.hauschildt@me.de',
     'author_company' => '',
     'constraints' => [
         'depends' => [
@@ -31,6 +31,6 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'autoload' => [
-        'psr-4' => ['MH\\mh_base\\' => 'Classes'],
+        'psr-4' => ['MH\\Base\\' => 'Classes'],
     ],
 ];

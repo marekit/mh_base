@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages"
+          date="2012-10-17T17:55:17Z" product-name="mh_base">
+        <header/>
+        <body>
+            <!-- Backend -->
+            <trans-unit id="backend.viewpage.xs">
+                <source>Extra small devices</source>
+            </trans-unit>
+            <trans-unit id="backend.viewpage.sm">
+                <source>Small devices</source>
+            </trans-unit>
+            <trans-unit id="backend.viewpage.md">
+                <source>Medium devices</source>
+            </trans-unit>
+            <trans-unit id="backend.viewpage.lg">
+                <source>Large devices</source>
+            </trans-unit>
+
+            <!-- Page (Backend) -->
+            <trans-unit id="flux.page.default">
+                <source>Default</source>
+            </trans-unit>
+            <trans-unit id="flux.page.default.description">
+                <source>Common page template</source>
+            </trans-unit>
+            <trans-unit id="flux.page.default.fields.settings.pageClass">
+                <source>Add some css class</source>
+            </trans-unit>
+            <trans-unit id="flux.page.default.columns.content">
+                <source>Content-Area</source>
+            </trans-unit>
+            <trans-unit id="flux.page.default.columns.sidebar">
+                <source>Sitebar-Area</source>
+            </trans-unit>
+
+            <!-- Content (Backend) -->
+            <trans-unit id="flux.content.sample">
+                <source>Sample Content-Element</source>
+            </trans-unit>
+            <trans-unit id="flux.content.sample.description">
+                <source>A sample content element wich could used as model for new elements </source>
+            </trans-unit>
+            <trans-unit id="flux.content.sample.fields.image">
+                <source>Bild</source>
+            </trans-unit>
+            <trans-unit id="flux.content.sample.fields.headline">
+                <source>Überschrift</source>
+            </trans-unit>
+            <trans-unit id="flux.content.sample.fields.teasertext">
+                <source>Teasertext</source>
+            </trans-unit>
+            <trans-unit id="flux.content.sample.fields.link">
+                <source>Teaserverlinkung</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>
+

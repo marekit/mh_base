@@ -1,0 +1,7 @@
+// Convert value (number with or without `px`) to percent in relation to context
+@function convert-to-percent($value, $context)  {
+	$value: strip-unit($value) / strip-unit($context) * 100%;
+	// Turn 0% into 0
+	@if ($value == 0%) { $value: 0; }
+	@return $value;
+}

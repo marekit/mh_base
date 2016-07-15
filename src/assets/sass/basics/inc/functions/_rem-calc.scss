@@ -1,0 +1,23 @@
+// Unit rem calculation
+// ==================
+
+// ! Inspired by foundation by ZURB
+// @see http://foundation.zurb.com/sites/docs/v/5.5.3/components/sass.html#foundation-global-settings-and-mixins
+
+// Call with 1, 2, 3 or 4 parameters, \'px\' is not required
+// rem-calc(10 20 30 40);
+// Optionally call with a different base (eg: 8px) to calculate em.
+// rem-calc(10 20, 8px);
+@function rem-calc($values, $context: $font-size-base) {
+	$max: length($values);
+
+	// Single value only
+	@if $max == 1 { @return convert-to-rem(nth($values, 1), $context); }
+
+	// Multiple values
+	$remValues: ();
+	@for $i from 1 through $max {
+		$remValues: append($remValues, convert-to-rem(nth($values, $i), $context));
+	}
+	@return $remValues;
+}

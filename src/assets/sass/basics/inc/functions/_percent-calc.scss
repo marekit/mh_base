@@ -1,0 +1,14 @@
+// Unit percent calculation
+@function percent-calc($values, $context) {
+	$max: length($values);
+
+	// Single value only
+	@if $max == 1 { @return convert-to-percent(nth($values, 1), $context); }
+
+	// Multiple values
+	$remValues: ();
+	@for $i from 1 through $max {
+		$remValues: append($remValues, convert-to-percent(nth($values, $i), $context));
+	}
+	@return $remValues;
+}

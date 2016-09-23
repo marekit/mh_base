@@ -11,7 +11,7 @@
     "fluidtypo3/fluidcontent": "~4.4.0",
     "fluidtypo3/fluidpages": "~3.6.0",
     "fluidtypo3/flux": "~7.4.0",
-    "fluidtypo3/vhs": "~2.4.0"
+    "fluidtypo3/vhs": "~3.0.0"
   },
   "require-dev": {},
   "scripts": {

@@ -36,10 +36,6 @@ class ContentController extends AbstractController
 {
 	public function sampleAction() {
 
-		echo "hallo";
-		$special = "Spezialwert 123";
-		$this->view->assign('mySpecialVariable', $special);
-		die("asd");
 	}
 
 }

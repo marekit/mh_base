@@ -1,8 +1,8 @@
 <?php
 
 $EM_CONF[$_EXTKEY] = [
-    'title' => 'Project: mh_base',
-    'description' => 'mh_base boilerplate for provider extension',
+    'title' => 'Project: base',
+    'description' => 'base boilerplate for provider extension',
     'category' => 'templates',
     'version' => '1.0.0',
     'state' => 'stable',
@@ -11,13 +11,10 @@ $EM_CONF[$_EXTKEY] = [
     'author_company' => '',
     'constraints' => [
         'depends' => [
-            'typo3' => '7.6',
+            'typo3' => '>=8.6',
             'cms' => '',
             'extbase' => '',
             'fluid' => '',
-            'flux' => '',
-            'fluidpages' => '',
-            'fluidcontent' => '',
             'realurl' => '',
             'scheduler' => '',
             'vhs' => '',
@@ -31,6 +28,6 @@ $EM_CONF[$_EXTKEY] = [
     'createDirs' => '',
     'clearCacheOnLoad' => 1,
     'autoload' => [
-        'psr-4' => ['MH\\Base\\' => 'Classes'],
+        'psr-4' => ['Hauschildt\\Base\\' => 'Classes'],
     ],
 ];

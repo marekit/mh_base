@@ -1,0 +1,9 @@
+# Build
+node_modules
+.tmp
+
+# TYPO3
+/typo3/*
+!/typo3/.htaccess
+!/typo3/composer.json
+!/typo3/composer.lock

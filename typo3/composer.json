@@ -6,31 +6,29 @@
     }
   ],
   "require": {
-    "typo3/cms": "~7.6.0",
-    "dmitryd/typo3-realurl": "~2.0.0",
-    "fluidtypo3/fluidcontent": "~4.4.0",
-    "fluidtypo3/fluidpages": "~3.6.0",
-    "fluidtypo3/flux": "~7.4.0",
-    "fluidtypo3/vhs": "~2.4.0"
+    "dmitryd/typo3-realurl": "~2.1.0",
+    "fluidtypo3/vhs": "~4.1.0",
+    "helhum/typo3-console": "~4.2.0",
+    "typo3/cms": "~8.6.0"
   },
   "require-dev": {},
-  "scripts": {
-    "post-install-cmd": "MH\\Base\\Composer\\InstallScript::runPostInstallCommand",
-    "post-update-cmd": "MH\\Base\\Composer\\InstallScript::runPostUpdateCommand"
-  },
-  "config": {
-    "vendor-dir": "/var/www/_share/vendor"
-  },
   "extra": {
+    "helhum/typo3-console": {
+      "install-extension-dummy": false
+    },
     "typo3/cms": {
-      "cms-package-dir": "{$vendor-dir}/../typo3/typo3_src-7",
-      "web-dir": ""
+      "cms-package-dir": "{$vendor-dir}/typo3/cms",
+      "web-dir": "web"
     }
+  },
+  "scripts": {
+    "post-install-cmd": "Hauschildt\\Base\\Composer\\InstallScript::runPostInstallCommand",
+    "post-update-cmd": "Hauschildt\\Base\\Composer\\InstallScript::runPostUpdateCommand"
   },
   "autoload": {
     "psr-4": {
-      "MH\\Base\\Composer\\": "../ext/mh_base/Classes/Composer",
-      "MH\\Base\\": "typo3conf/ext/mh_base/Classes"
+      "Hauschildt\\Base\\Composer\\": "../ext/base/Classes/Composer",
+      "Hauschildt\\Base\\": "web/typo3conf/ext/base/Classes"
     }
   }
 }

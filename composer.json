@@ -9,7 +9,7 @@
             "email": "marc.hauschildt@me.com"
         }
     ],
-    "version": "0.1.1",
+    "version": "0.1.2",
     "require": {
         "typo3/cms-core": ">=8.7"
     },
